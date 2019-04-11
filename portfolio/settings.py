@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #我的第一个app
+    # 我的第一个app
     'gallery.apps.GalleryConfig'
 ]
 
@@ -120,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+#媒体文件放的网址
+MEDIA_URL = '/media/'
+#媒体文件放的路径
+MEDIA_ROOT =os.path.join(BASE_DIR, 'media') 
